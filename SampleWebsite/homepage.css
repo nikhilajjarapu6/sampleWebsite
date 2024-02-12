@@ -5,7 +5,7 @@ body{
     /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     font-family: 'Mukta', sans-serif;
     font-size: large;
-    background-image: url(../Todo/login\ bg.jpg);
+    background-image: url(./login\ bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
