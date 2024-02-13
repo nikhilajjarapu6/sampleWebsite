@@ -201,6 +201,7 @@ input:focus {
     body{
 /*         width: 150%; */
         height: 620px; 
+        backgrounds-color:white;
       
     }
     .form-div{
