@@ -49,7 +49,7 @@ function validate() {
             window.open("login.html");
         }
         else{
-            alert("kekdhwekhdw")
+            alert("check your field inputs")
         }
         
     }
@@ -73,56 +73,49 @@ function validate() {
         }
     }
     // document.getElementById('password').addEventListener('input', validatePassword);
-    function validatePassword() {
-        var passwordInput = document.getElementById('password').value;
-        var confirmPassword = document.getElementById('confirmPassword').value;
-    
-        if (passwordInput !== '' && confirmPassword !== '' && passwordInput !== confirmPassword) {
-            document.getElementById('errorSpan-confirmPassword').innerHTML = 'Passwords should match';
-            // document.getElementById('password').style.border = '2px solid red';
-            document.getElementById('confirmPassword').style.border = '2px solid red';
-            return false;
-        } else if (passwordInput === confirmPassword) {
-            document.getElementById('errorSpan-confirmPassword').innerHTML = '';
-            document.getElementById('password').style.border = '2px solid rgb(51, 255, 0.5)';
-            document.getElementById('confirmPassword').style.border = '2px solid rgb(51, 255, 0.5)';
-            setTimeout(() => {
-                document.getElementById('password').style.border = '';
-                document.getElementById('confirmPassword').style.border = '';
-            }, 3000);
-            return true;
-        }
-        var uppercaseRegex = /[A-Z]/;
-        var specialCharRegex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+   function validatePassword() {
+    var passwordInput = document.getElementById('password').value;
+    var confirmPassword = document.getElementById('confirmPassword').value;
 
-        let hasUpperCase=uppercaseRegex.test(passwordInput);
-        let hasValidLength=passwordInput.length>=8;
-        let hasValidSpecialChar=specialCharRegex.test(passwordInput);
-
-        if(!hasValidLength){
-            document.getElementById('errorSpan-password').innerHTML='length should be more than 8';
-            document.getElementById('password').style.border='2px solid red';
-            return false;
-        }
-        else if(!hasUpperCase){
-            document.getElementById('errorSpan-password').innerHTML='password should combination of uppercase and special charecters';
-            document.getElementById('password').style.border='2px solid red';
-            return false;
-        }
-        else if(!hasValidSpecialChar){
-            document.getElementById('errorSpan-password').innerHTML='password should contain one special';
-            document.getElementById('password').style.border='2px solid red';
-            return false;
-        }
-        else {
-            document.getElementById('errorSpan-password').innerHTML='';
-            document.getElementById('password').style.border = '2px solid rgb(51, 255, 0.5)';
-            setTimeout(() => {
-                document.getElementById('password').style.border  = '';
-            }, 3000);
-            return true;
-        }
+    if (passwordInput !== '' && confirmPassword !== '' && passwordInput !== confirmPassword) {
+        document.getElementById('errorSpan-confirmPassword').innerHTML = 'Passwords should match';
+        document.getElementById('confirmPassword').style.border = '2px solid red';
+        return false;
+    } else {
+        document.getElementById('errorSpan-confirmPassword').innerHTML = '';
+        document.getElementById('password').style.border = '2px solid rgb(51, 255, 0.5)';
+        document.getElementById('confirmPassword').style.border = '2px solid rgb(51, 255, 0.5)';
+        setTimeout(() => {
+            document.getElementById('password').style.border = '';
+            document.getElementById('confirmPassword').style.border = '';
+        }, 3000);
     }
+
+    var uppercaseRegex = /[A-Z]/;
+    var specialCharRegex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+
+    let hasUpperCase = uppercaseRegex.test(passwordInput);
+    let hasValidLength = passwordInput.length >= 8;
+    let hasValidSpecialChar = specialCharRegex.test(passwordInput);
+
+    if (!hasValidLength) {
+        document.getElementById('errorSpan-password').innerHTML = 'Length should be more than 8';
+        document.getElementById('password').style.border = '2px solid red';
+        return false;
+    } else if (!hasUpperCase) {
+        document.getElementById('errorSpan-password').innerHTML = 'Password should include at least one uppercase letter';
+        document.getElementById('password').style.border = '2px solid red';
+        return false;
+    } else if (!hasValidSpecialChar) {
+        document.getElementById('errorSpan-password').innerHTML = 'Password should include at least one special character';
+        document.getElementById('password').style.border = '2px solid red';
+        return false;
+    } else {
+        document.getElementById('errorSpan-password').innerHTML = '';
+        document.getElementById('password').style.border = '2px solid rgb(51, 255, 0.5)';
+        return true;
+    }
+}
 
     function validateMobile(){
         var number=document.getElementById('mobileNumber').value
