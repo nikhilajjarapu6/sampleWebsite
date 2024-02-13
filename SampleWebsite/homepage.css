@@ -197,7 +197,7 @@ input:focus {
     left:-40px;
     top:3px
 }
-@media screen and (max-width:200px) {
+@media screen and (max-width:380px) {
     body{
 /*         width: 150%; */
         height: 620px; 
