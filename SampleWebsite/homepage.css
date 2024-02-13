@@ -201,7 +201,7 @@ input:focus {
     body{
 /*         width: 150%; */
         height: 620px; 
-        backgrounds-color:white;
+        background-color:white;
       
     }
     .form-div{
@@ -211,6 +211,7 @@ input:focus {
       top: 60%;
       left:100%;
       transform: translate(-50%,-50%);
+      background-color: black; 
 
     }
     
