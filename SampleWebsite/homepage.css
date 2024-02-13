@@ -197,10 +197,19 @@ input:focus {
     left:-40px;
     top:3px
 }
-@media screen and (max-width:360px) {
+@media screen and (max-width:320px) {
     body{
-        width: 850px;
-        height: 200px;  
+        width: 680px;
+        /* height: 320px;   */
+    }
+    .form-div{
+      display: flex;
+      flex-wrap: wrap;
+      position: absolute;
+      top: 60%;
+      left:100%;
+      transform: translate(-50%,-50%);
+
     }
     
 }
