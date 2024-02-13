@@ -199,8 +199,9 @@ input:focus {
 }
 @media screen and (max-width:320px) {
     body{
-        width: 680px;
-        /* height: 320px;   */
+        width: 150%;
+        height: 320px; 
+      
     }
     .form-div{
       display: flex;
