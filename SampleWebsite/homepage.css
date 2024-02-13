@@ -197,10 +197,10 @@ input:focus {
     left:-40px;
     top:3px
 }
-@media screen and (max-width:320px) {
+@media screen and (max-width:200px) {
     body{
-        width: 150%;
-        height: 320px; 
+/*         width: 150%; */
+        height: 620px; 
       
     }
     .form-div{
