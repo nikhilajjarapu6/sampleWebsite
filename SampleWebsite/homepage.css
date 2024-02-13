@@ -197,6 +197,13 @@ input:focus {
     left:-40px;
     top:3px
 }
+@media screen and (max-width:360px) {
+    body{
+        width: 850px;
+        height: 200px;  
+    }
+    
+}
 
 
 
