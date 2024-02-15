@@ -224,7 +224,7 @@ input:focus {
         justify-content: space-between; /* Adjusted */
         align-items: center;
         padding: 0 20px; /* Adjusted */
-/*         width:200px; */
+        width:350px;
     }
 
     .nav-wrapper {
@@ -241,8 +241,9 @@ input:focus {
         display: flex;
         list-style: none;
         margin: 0;
-        padding: 30px;
+        /* padding: 90px; */
         font-size: 15px;
+        margin-left: 80px;
     }
 
     .nav-wrapper ul li {
