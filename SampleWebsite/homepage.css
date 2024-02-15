@@ -197,7 +197,7 @@ input:focus {
     left:-40px;
     top:3px
 }
-@media only screen and (min-width:400px) {
+@media only screen and (min-width:100px) and (max-width:1000px) {
    
     .form-div{
       width: 90%;
