@@ -222,6 +222,62 @@ input::placeholder{
     margin: 0%;
     padding: 0%;
 }
+@media only screen and (max-width: 380px) {
+    .form-div {
+        width: 90%;
+        height: 45%;
+        position: relative;
+        top: 100px; /* Adjusted */
+    }
+    
+    .nav-wrapper ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        font-size: 15px;
+        padding: 0; /* Adjusted */
+    }
+
+    .nav-wrapper ul li {
+        padding: 0 10px; /* Adjusted */
+    }
+
+    .navbar {
+        background-color: rgba(95, 158, 160, 0.089);
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .userIocn {
+        position: relative;
+        top: 30px;
+        right: 50px;
+        z-index: 1;
+        font-size: 60px;
+    }
+
+    .user-details-form {
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
+
+    .register {
+        position: absolute;
+        top: 60%;
+        left: 12%;
+        font-size: 15px;
+    }
+    
+    .register a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.61);
+    }
+}
+
 @media only screen and  (max-width:412px) {
    
     .form-div{
